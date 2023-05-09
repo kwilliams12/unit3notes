@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .pink{
+            color: pink;
+        }
+        .teal{
+            color: teal;
+        }
+        .purple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <P> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc scelerisque viverra mauris in. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Mauris a diam maecenas sed enim ut sem viverra. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Est ultricies integer quis auctor elit sed vulputate mi sit. Dolor morbi non arcu risus quis. Purus faucibus ornare suspendisse sed nisi. Curabitur vitae nunc sed velit dignissim. Diam vulputate ut pharetra sit amet aliquam. Amet volutpat consequat mauris nunc congue nisi. Nisi est sit amet facilisis magna etiam tempor. </P>
+    <div class="row">
+    <h3>Background</h3>
+     <button id="1">RED</button>
+      <button id="2">GREEN</button>
+        <button id="3">BLUE</button>
+    </div>
+    <div class="row">
+    <H3>Text</H3>
+        <button id="4">PINK</button>
+        <button id="5">TEAL</button>
+        <button id="6">PURPLE</button>
+    </div>
+<button id="clear">CLEAR</button>
+    </div>
+</div>
+<script>
+    const content = document.querySelector('.content');
+    const red = document.getElementById('1');
+    const green = document.getElementById('2');
+    const blue = document.getElementById('3');
+
+    const pink = document.getElementById('4');
+    const teal = document.getElementById('5');
+    const purple = document.getElementById('6');
+
+    const clearbutton = document.getElementById('clear');
+
+    red.addEventListener('click' , function (e){
+    content.classList.add('red');
+    });
+
+    red.addEventListener('click' , function (e){
+        content.classList.add('pink');
+    });
+
+    red.addEventListener('click' , function (e){
+        content.classList.add('green');
+    });
+    red.addEventListener('click' , function (e){
+        content.classList.add('blue');
+    });
+    red.addEventListener('click' , function (e){
+        content.classList.add('teal');
+    });
+    red.addEventListener('click' , function (e){
+        content.classList.add('purple');
+    });
+
+</script>
+</body>
+</html>

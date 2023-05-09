@@ -27,6 +27,21 @@
     parentElement.addEventListener('click', function (e){
         console.log('you clicked on the parent containing div. ')
     })
+    buttonElement.addEventListener('mouseover') , function(e) {
+        console.log('your mouse is on the button')
+    };
+buttonElement.addEventListener('mouseout') , function(e) {
+    console.log('your mouse is no longer on the button')
+};
+inputElement.addEventListener('focus') , function(e) {
+    console.log('you focused on the input!')
+};
+inputElement.addEventListener('blur') , function (e) {
+    console.log('you stop focusing on the input!')
+}
+document.addEventListener('keydown') , function (e){
+    console.log('you just hit the key' ${e.key} )
+}
 
 </script>
 </body>
